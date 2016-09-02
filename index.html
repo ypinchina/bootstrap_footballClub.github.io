@@ -1,64 +1,351 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bootstrap footballclub.GitHub.io by ypinchina</title>
+<!DOCTYPE html>
+<html lang="zh-cn">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FootBall Club</title>
+		<!-- Bootstrap -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/Carousel.css" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Bootstrap footballclub.GitHub.io</h1>
-        <p>project_bootstrap</p>
+		<style>
 
-        <p class="view"><a href="https://github.com/ypinchina/bootstrap_footballClub.github.io">View the Project on GitHub <small>ypinchina/bootstrap_footballClub.github.io</small></a></p>
+		</style>
+	</head>
 
+	<body>
+		<!-- 顶部导航 -->
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+					<a class="navbar-brand" href="#">现代足球</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#ad-carousel">综述</a>
+						</li>
+						<li>
+							<a href="#summary-container">简述</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#feature-tab" data-tab="tab-chrome">曼联</a>
+								</li>
+								<li>
+									<a href="#feature-tab" data-tab="tab-firefox">拜仁慕尼黑</a>
+								</li>
+								<li>
+									<a href="#feature-tab" data-tab="tab-safari">皇马</a>
+								</li>
+								<li>
+									<a href="#feature-tab" data-tab="tab-opera">切尔西</a>
+								</li>
+								<li>
+									<a href="#feature-tab" data-tab="tab-ie">巴塞罗那</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#about-modal">关于</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-        <ul>
-          <li><a href="https://github.com/ypinchina/bootstrap_footballClub.github.io/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ypinchina/bootstrap_footballClub.github.io/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ypinchina/bootstrap_footballClub.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		<!-- 广告轮播 -->
+		<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#ad-carousel" data-slide-to="1"></li>
+				<li data-target="#ad-carousel" data-slide-to="2"></li>
+				<li data-target="#ad-carousel" data-slide-to="3"></li>
+				<li data-target="#ad-carousel" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/man_wall.jpg" alt="1 slide">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>曼联</h1>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+							<p>英格兰历史上最成功的足球俱乐部，他的球迷和球员都被称为"红魔"。</p>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="http://www.manunited.com.cn" role="button" target="_blank">进入官网</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/bai__wall.jpg" alt="2 slide">
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>拜仁慕尼黑</h1>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+							<p>德国历史上最成功的俱乐部，以熟练的挖同联盟的球员而闻名于世。</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+							<p>
+								<a class="btn btn-lg btn-primary" href="http://www.fcbayern.cn" target="_blank" role="button">进入官网</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/real_wall.jpg" alt="3 slide">
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>皇马</h1>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+							<p>足坛历史上获得欧洲冠军杯最多的俱乐部，也可以说现代足球最成功的俱乐部，球迷被成为天龙人。</p>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/ypinchina">ypinchina</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+							<p>
+								<a class="btn btn-lg btn-primary" href="http://www.realmadrid.com" target="_blank" role="button">进入官网</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/qie_wall.jpg" alt="4 slide">
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>切尔西</h1>
+
+							<p>英格兰伦敦的大球会，球员以铁血著称，铁血蓝军。</p>
+
+							<p>
+								<a class="btn btn-lg btn-primary" href="http://china.chelseafc.com" target="_blank" role="button">进入官网</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/ba_wall.jpg" alt="5 slide">
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>巴塞罗那</h1>
+
+							<p>以西班牙美丽足球闻名于世的球会，近十年来欧洲最成功的俱乐部，球员都有拉玛西亚影视学院学生的美誉</p>
+
+							<p>
+								<a class="btn btn-lg btn-primary" href="http://fcbarcelona.qq.com" target="_blank" role="button">进入官网</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#ad-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+
+		<!-- 主要内容 -->
+		<div class="container summary">
+
+			<!-- 简介 -->
+			<div class="row" id="summary-container">
+				<div class="col-md-4">
+					<img class="img-circle" src="img/man.png" alt="曼联">
+
+					<h2>曼联</h2>
+
+					<p>英格兰第一豪门,红魔曼联。200年底蕴历史，英格兰历史上第一个三冠王俱乐部，主帅弗格森因此被英格兰女王加封为爵士。</p>
+
+					<p>
+						<a class="btn btn-default" href="#" role="button">进入官网</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="img/bai.jpg" alt="拜仁慕尼黑">
+
+					<h2>拜仁慕尼黑</h2>
+
+					<p>啤酒国的豪门，最强大的德国俱乐部，挖角之王。拥有大量的金钱，德国国家队队员几乎都聚集在此球队。</p>
+
+					<p>
+						<a class="btn btn-default" href="#" role="button">进入官网</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-circle" src="img/real.jpeg" alt="皇马">
+
+					<h2>皇马</h2>
+
+					<p>坐拥第十一个欧洲冠军杯，欧洲最成功最著名的球队，银河战舰，欧洲之巅。皇家马德里,天龙人</p>
+
+					<p>
+						<a class="btn btn-default" href="#" role="button">进入官网</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- 特性 -->
+
+			<hr class="feature-divider">
+
+			<ul class="nav nav-tabs" role="tablist" id="feature-tab">
+				<li class="active">
+					<a href="#tab-chrome" role="tab" data-toggle="tab">曼联</a>
+				</li>
+				<li>
+					<a href="#tab-firefox" role="tab" data-toggle="tab">拜仁慕尼黑</a>
+				</li>
+				<li>
+					<a href="#tab-safari" role="tab" data-toggle="tab">皇马</a>
+				</li>
+				<li>
+					<a href="#tab-opera" role="tab" data-toggle="tab">切尔西</a>
+				</li>
+				<li>
+					<a href="#tab-ie" role="tab" data-toggle="tab">巴塞罗那</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab-chrome">
+					<div class="row feature">
+						<div class="col-md-7">
+
+							<h2 class="feature-heading">曼联 <span class="text-muted">红魔</span></h2>
+
+							<p class="lead">曼联，曼彻斯特联足球俱乐部。曼联是英格兰足球史上最为成功的俱乐部之一，也是欧洲乃至世界最具有影响力最成功的的球队之一，共获得20次英格兰顶级联赛冠军，12次英格兰足总杯冠军，4次英格兰联赛杯冠军（除英格兰联赛杯外均为最高纪录）。
+							</p>
+						</div>
+						<div class="col-md-5">
+							<img class="feature-image img-responsive" src="img/man.png" alt="曼联">
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-firefox">
+					<div class="row feature">
+						<div class="col-md-5">
+							<img class="feature-image img-responsive" src="img/bai.jpg" alt="拜仁慕尼黑">
+						</div>
+						<div class="col-md-7">
+
+							<h2 class="feature-heading">拜仁慕尼黑 <span class="text-muted">南大王</span>
+                    </h2>
+
+							<p class="lead">拜仁慕尼黑，拜仁慕尼黑足球俱乐部，简称拜仁慕尼黑或拜仁，是一家设于巴伐利亚州首府慕尼黑的德国体育俱乐部，其最著名的是参加德国足球甲级联赛的职业足球队，曾创纪录的赢得26次德国足球顶级联赛冠军 及17次德国杯冠军，为德国最成功的足球俱乐部。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-safari">
+					<div class="row feature">
+						<div class="col-md-7">
+
+							<h2 class="feature-heading">皇马 <span class="text-muted">天龙人</span></h2>
+
+							<p class="lead">皇马，皇家马德里足球俱乐部，拥有众多世界球星。2000年12月11日被国际足球联合会（FIFA）评为20世纪最伟大的球队。2009年9月10日被国际足球历史和统计联合会评为20世纪欧洲最佳俱乐部。2014年9月10日被评为2014年度欧洲最佳俱乐部。</p>
+						</div>
+						<div class="col-md-5">
+							<img class="feature-image img-responsive" src="img/real.jpeg" alt="皇马">
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-opera">
+					<div class="row feature">
+						<div class="col-md-5">
+							<img class="feature-image img-responsive" src="img/qie.jpg" alt="切尔西">
+						</div>
+						<div class="col-md-7">
+
+							<h2 class="feature-heading">切尔西 <span class="text-muted">蓝军</span>
+                    </h2>
+
+							<p class="lead">切尔西，切尔西足球俱乐部（粤语名：车路士、车仔、车子），简称切尔西，绰号蓝军、蓝狮。参加英格兰足球超级联赛，与尤文图斯、拜仁慕尼黑、阿贾克斯并列为欧洲大满贯球队。俱乐部成立于1905年3月14日，主场位于伦敦哈默史密斯·富勒姆区邻近泰晤士河的斯坦福桥球场。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-ie">
+					<div class="row feature">
+						<div class="col-md-7">
+
+							<h2 class="feature-heading">巴塞罗那 <span class="text-muted">巴萨</span></h2>
+
+							<p class="lead">巴塞罗那足球俱乐部（Fútbol Club Barcelona），简称巴萨（Barca），是一家位于西班牙巴塞罗那市的足球俱乐部，西班牙足球甲级联赛传统豪门之一。1899年11月29日由瑞士人胡安·甘伯创立。球队主场诺坎普体育场可容纳接近十万名观众，是全欧洲最大及世界第二大的足球场。
+							</p>
+						</div>
+						<div class="col-md-5">
+							<img class="feature-image img-responsive" src="img/ba.jpg" alt="巴塞罗那">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 关于 -->
+			<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+							<h4 class="modal-title" id="modal-label">关于</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								从8世纪到19世纪，现代足球运动的前身以各种方式在欧洲存在着，直到1863年，第一份正式的足球比赛规则在英国创立，这也标志着现代足球运动的诞生。
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<p class="pull-right">
+					<a href="#top">回到顶部</a>
+				</p>
+
+				<p>By 小易</p>
+			</footer>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$('#ad-carousel').carousel();
+				$('#menu-nav .navbar-collapse a').click(function(e) {
+					var href = $(this).attr('href');
+					var tabId = $(this).attr('data-tab');
+					if('#' !== href) {
+						e.preventDefault();
+						$(document).scrollTop($(href).offset().top - 70);
+						if(tabId) {
+							$('#feature-tab a[href=#' + tabId + ']').tab('show');
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+
 </html>
